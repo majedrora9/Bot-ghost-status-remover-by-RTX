@@ -36,11 +36,11 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["dicord.gg/ValoVault"];
+const statusMessages = ["OrbitMC"];
 
 
 let currentIndex = 0;
-const channelId = '';
+const channelId = '1335616947076730911';
 
 async function login() {
   try {
@@ -74,7 +74,7 @@ function updateStatusAndSendMessages() {
 
   client.user.setPresence({
     activities: [{ name: currentStatus, type: ActivityType.Custom}],
-    status: 'dnd',
+    status: 'idle',
   });
 
   
